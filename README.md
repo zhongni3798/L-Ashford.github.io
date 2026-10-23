@@ -12,3 +12,7 @@ Create a character or import mixed-language notes. Organise original notes, expl
 Your own characters and drafts save in this browser on this device, not in this repository. Use **Studio settings & backups** to export a full JSON backup; import it when switching devices or website origins. Public access does not share your browser archive with other visitors. Clearing site data or private browsing may lose local work.
 
 AI assistance is disabled on this static site. It requires a separately hosted, authenticated backend and server-side API credentials. Never add API keys or private notes to this public repository.
+
+## Interface language
+
+Use the language selector at the top right for a complete English or Simplified Chinese interface. Navigation, forms, questions, review, history, settings and messages follow that language. The choice is remembered in this browser. Original character names, notes and drafts are preserved. Narration and dialogue languages remain independent writing settings.
