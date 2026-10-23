@@ -7,7 +7,7 @@ A bilingual character archive and writing studio.
 
 Website: https://zhongni3798.github.io/L-Ashford.github.io/
 
-Create a character or import mixed-language notes. Organise original notes, explore questions, select excerpts for a newcomer introduction, edit a draft and approve a version. The three initial characters are fictional demonstration material.
+Create a character or import mixed-language notes. Organise original notes, explore questions, select excerpts for a newcomer introduction, edit a draft and approve a version. The archive starts empty. Built-in demo characters have been removed, including legacy browser copies flagged as samples. Characters you create yourself are preserved.
 
 Your own characters and drafts save in this browser on this device, not in this repository. Use **Studio settings & backups** to export a full JSON backup; import it when switching devices or website origins. Public access does not share your browser archive with other visitors. Clearing site data or private browsing may lose local work.
 
