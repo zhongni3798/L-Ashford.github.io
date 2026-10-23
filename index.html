@@ -1,14 +1,23 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f4ef"><title>Between the Lines — Character & writing studio</title><link rel="stylesheet" href="./style.css"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f4ef"><title>Between the Lines — Character & writing studio</title><link rel="stylesheet" href="./style.css?v=20261023-2"></head>
 <body>
 <aside class="sidebar">
   <a class="brand" href="#"><span class="brand-mark">間</span><span>Between<br><em>the Lines</em></span></a>
   <div class="studio-label">YOUR WRITING STUDIO <span>私人书房</span></div>
-  <nav id="nav"><button data-view="archive" class="active"><span>▦</span>Character archive<i id="character-count">3</i></button><button data-view="develop"><span>◈</span>Development room</button><button data-view="write"><span>✎</span>Writing desk</button><button data-view="versions"><span>◷</span>Version history</button></nav>
+  <nav id="nav"><button data-view="archive" class="active"><span>▦</span><span class="nav-label">Character archive<small>人物档案</small></span><i id="character-count">3</i></button><button data-view="develop"><span>◈</span><span class="nav-label">Development room<small>人物探索</small></span></button><button data-view="write"><span>✎</span><span class="nav-label">Writing desk<small>写作书桌</small></span></button><button data-view="versions"><span>◷</span><span class="nav-label">Version history<small>版本记录</small></span></button></nav>
   <div class="sidebar-section"><span>YOUR COLLECTION</span><button id="collection">◌ &nbsp; All characters <span>↗</span></button></div>
   <div class="sidebar-bottom"><div class="private-note"><span>♧</span><div>A little room for big inner lives.<small>Your words stay yours.</small></div></div><button id="settings-button">⚙ <span>Studio settings & backups</span></button><div class="author-avatar">W<span>My personal studio<small>English · 中文</small></span><span class="online-dot"></span></div></div>
 </aside>
-<div class="app-shell"><header class="topbar"><span>Personal studio <span class="slash">/</span> <span id="breadcrumb">Character archive</span></span><div><span class="saved-indicator" id="save-status">● Saved on this device</span><button class="icon-button" id="help-button" aria-label="How to use this studio">?</button></div></header><main id="main"></main><footer><span>Made for the stories only you can tell.</span><span>慢慢写，人物会慢慢清晰。 <span class="footer-star">✳</span></span></footer></div>
+<div class="app-shell"><header class="topbar"><span>Personal studio <span class="slash">/</span> <span id="breadcrumb">Character archive</span></span><div><span class="saved-indicator" id="save-status">● Saved on this device</span><button class="icon-button" id="help-button" aria-label="How to use this studio">?</button></div></header><main id="main"><section class="panel" id="boot-notice" role="status"><p class="eyebrow">BETWEEN THE LINES · 间</p><h2>正在打开写作工作室…</h2><p class="hint">功能包括人物档案、混合语言笔记导入、手动草稿、审批版本和备份。AI 辅助尚未连接。</p><p id="boot-detail" class="hint">Loading your studio. If this message remains, the application script has not started. 若一直停留在这里，请刷新或在最新版 Safari、Chrome、Edge 中打开。</p><button class="button" onclick="location.reload()">重新加载 · Reload</button><noscript><p>请启用 JavaScript 才能使用编辑、导入和保存功能。JavaScript is required for this studio.</p></noscript></section></main><footer><span>Made for the stories only you can tell.</span><span>慢慢写，人物会慢慢清晰。 <span class="footer-star">✳</span></span></footer></div>
 <dialog id="dialog"><div id="dialog-content"></div></dialog><div id="toast" role="status"></div><input type="file" id="backup-file" accept="application/json" hidden><input type="file" id="notes-file" accept=".txt,.md,text/plain,text/markdown" hidden>
-<script type="module" src="./app.js"></script></body></html>
+<script>
+(function(){
+ function explain(message){
+   var el=document.getElementById('boot-detail');
+   if(el)el.textContent='页面程序未能启动：'+message+'。请在最新版 Safari、Chrome 或 Edge 中打开；不要清除已有笔记的浏览器数据。';
+ }
+ window.addEventListener('error',function(event){if(!window.studioReady)explain(event.message||'脚本加载失败，请检查网络后刷新');},true);
+ window.setTimeout(function(){if(!window.studioReady)explain('加载超时，网络或浏览器可能阻止了脚本');},12000);
+})();
+</script><script defer src="./app.js?v=20261023-2"></script></body></html>
