@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f4ef"><title>Between the Lines — Character & writing studio</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="#"><span class="brand-mark">間</span><span>Between<br><em>the Lines</em></span></a>
+  <div class="studio-label">YOUR WRITING STUDIO <span>私人书房</span></div>
+  <nav id="nav"><button data-view="archive" class="active"><span>▦</span>Character archive<i id="character-count">3</i></button><button data-view="develop"><span>◈</span>Development room</button><button data-view="write"><span>✎</span>Writing desk</button><button data-view="versions"><span>◷</span>Version history</button></nav>
+  <div class="sidebar-section"><span>YOUR COLLECTION</span><button id="collection">◌ &nbsp; All characters <span>↗</span></button></div>
+  <div class="sidebar-bottom"><div class="private-note"><span>♧</span><div>A little room for big inner lives.<small>Your words stay yours.</small></div></div><button id="settings-button">⚙ <span>Studio settings & backups</span></button><div class="author-avatar">W<span>My personal studio<small>English · 中文</small></span><span class="online-dot"></span></div></div>
+</aside>
+<div class="app-shell"><header class="topbar"><span>Personal studio <span class="slash">/</span> <span id="breadcrumb">Character archive</span></span><div><span class="saved-indicator" id="save-status">● Saved on this device</span><button class="icon-button" id="help-button" aria-label="How to use this studio">?</button></div></header><main id="main"></main><footer><span>Made for the stories only you can tell.</span><span>慢慢写，人物会慢慢清晰。 <span class="footer-star">✳</span></span></footer></div>
+<dialog id="dialog"><div id="dialog-content"></div></dialog><div id="toast" role="status"></div><input type="file" id="backup-file" accept="application/json" hidden><input type="file" id="notes-file" accept=".txt,.md,text/plain,text/markdown" hidden>
+<script type="module" src="./app.js"></script></body></html>
